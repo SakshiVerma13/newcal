@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple Calculator</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+	<header><h1>Calculator</h1></header>
+		<div id="calculator">
+		<div id="error"></div>
+		 <div id="currentExpression"></div>
+		  <div id="result">0</div>	
+		  <div id="operators" class="columns">
+				<span id="allClear">AC</span>
+				<span id="clearEntry">CE</span>
+				<span class="code-47 divide operator">/</span>
+				<span class="code-42 multiple operator">*</span>
+		  </div>
+		  <div id="numbers" class="wrapper">		  
+			<div class="columns">
+				<span class="number num-7">7</span>
+				<span class="number num-8">8</span>
+				<span class="number num-9">9</span>
+				<span class="minus code-45 operator">-</span>
+			</div>			
+			<div class="columns">
+				<span class="number num-4">4</span>
+				<span class="number num-5">5</span>
+				<span class="number num-6">6</span>
+				<span class="add code-43 operator">+</span>
+			</div>
+			<div class="columns">
+				<span class="number num-1">1</span>
+				<span class="number num-2">2</span>
+				<span class="number num-3">3</span>
+				<span class="remainder code-37 operator">%</span>
+			</div>			
+			<div class="columns">
+				
+				<span class="number num-0">0</span> 
+				<span class="number decimal">.</span>
+				<span class="code-61 code-13" id="calculate">=</span>  
+			</div>
+		  </div>
+		</div>
+
+	<footer>
+	   <div class="info">Created by Sakshi Verma </div>
+		<script src='./script.js' type="text/javascript"></script>
+	</footer>
+  </body>
+
+</html>

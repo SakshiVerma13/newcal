@@ -1,0 +1,102 @@
+body, div, span {
+    padding:0;
+    margin:2px auto;
+    font-family: Arial;
+}
+
+h1, footer { 
+	text-align:center;
+	padding-top:5px;
+}
+
+ #calculator{ 
+	width:70%; 
+	height:465px;
+	 background-color: #AAA; /* dark gray */
+	border-radius:10px; 
+	padding: 5px;
+ }
+
+ #error { 
+	font-style:italic; 
+ }
+
+ #result {
+	width:93%; 
+	height:60px;
+	margin:15px; 
+	background-color:#DEE; 
+	text-align:right; 
+	font-size:45px;
+ }
+
+.columns { 
+	margin:6px; 
+  }
+
+  span { 
+	width:22%; height:50px;
+	float:left; 
+	cursor:pointer; 
+	display:block; 
+	margin: 5px 6px;
+	text-align:center; 
+	text-decoration:none; 
+	color:black; 
+	font-size: 39px; 
+	padding: 2px; 
+	background: #EEF; 
+	}
+
+ .hide { 
+	background-color:#EEE; 
+	cursor:none;
+  }
+
+ .twoCol { width:47%;}
+
+  /* Responsive design using width percentages so things look ok on a mobile device */
+  @media (min-width: 1024px) { 
+	#calculator { width:60%; }
+	#total 		{ width: 90%; }
+	.twoCol 	{ width:46%;}
+  }
+
+  @media (max-width: 775px) {
+    #calculator { width:95%;}
+	#result 	{ width:93%;}
+    span 		{ width:20%; }
+    .columns 	{ padding:0px;}
+	.twoCol 	{ width: 42%;}
+  }
+
+  @media (max-width: 500px) {
+	 header,.hide-xs { 
+		display:none;
+	 }
+	 footer { 
+		font-size:smaller;
+	  }
+	 #error { 
+		font-size:x-small;
+		width:50% 
+	 }
+	 #calculator { 
+		width:95%; 
+		height: 325px;
+	 }
+	 #result {width:89%;}
+
+	 #result, span {
+		 font-size:large;
+		 height: 35px;
+	 } 
+	span {
+		width:23%; 
+		padding:0px; 
+		margin:1px; 
+	}
+	.twoCol {
+		width:46.33%;
+	}
+  }
